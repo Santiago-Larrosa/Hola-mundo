@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio - Red Creativa</title>
+    <style>
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+}
+.dropdown2 {
+    position: relative;
+    border-radius: 50%;
+}
+.dropbtn {
+    background-color:rgb(20, 139, 148);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    opacity: 0.5; 
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: black; 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #5f9f5f;
+}
+
+
+        body {
+            font-family: "Nunito","Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: white;
+            color: skyblue;
+            text-align: center;
+            padding: 20px;
+        }
+        .dropdown-circle {
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.dropbtn-circle {
+    background-color: #df6344;
+    color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 36px;
+    font-family:   "Nunito","Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    left: -400px;
+    top:-400px;
+    position: absolute;
+    
+}
+
+.dropdown-content-circle {
+    display: none;
+    position: absolute;
+    background-color: #e99999;
+    min-width: 160px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: -500px;
+    top:-300px;
+    position: absolute;
+
+}
+
+.dropdown-content-circle a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+.show {
+    display: block;
+}
+        .navbar {
+            margin-top: 10px;
+            background-color:rgb(20, 139, 148);
+            opacity:0.5;
+            width:100%;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        .hero {
+            text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+        }
+
+        .hero h1 {
+            font-size: 36px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f36f6f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #e55e5e;
+        }
+        .circles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+}
+.rubik {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left:100px;
+}
+.circle2 {
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.circle2:nth-child(4) {
+    width: 40px;
+    height: 40px;
+    background-color: #03A5A0; /* Celeste */
+    top: 40%;
+    left: 80%;
+}
+.circle2:nth-child(5) {
+    width: 600px;
+    height: 600px;
+    background-color: #086eb3; /* Celeste */
+    top: -200px;
+    left: -200px;
+   
+}
+.circle2:nth-child(6) {
+    width: 300px;
+    height: 300px;
+    background-color: #17e6e6; /* Celeste */
+    top: 100px;
+    left: -200px;
+
+}
+.circle2:nth-child(7) {
+    width: 400px;
+    height: 400px;
+    background-color: #009688; /* Verde claro */
+    top: -100px;
+    left: -200px;
+
+}
+
+.circle2:nth-child(8) {
+    width: 600px;
+    height: 600px;
+    background-color: #099466; /* Celeste */
+    top: -200px;
+    right: -200px;
+   
+}
+.circle2:nth-child(9) {
+    width: 300px;
+    height: 300px;
+    background-color: #0ceba0; /* Celeste */
+    top: -40px;
+    right: -90px;
+
+}
+.circle2:nth-child(10) {
+    width: 400px;
+    height: 400px;
+    background-color: #04e09e; /* Verde claro */
+    top: -300px;
+    right: -100px;
+
+}
+.circle2:nth-child(11) {
+    width: 100px;
+    height: 100px;
+    background-color: #31d0e6; /* Celeste */
+    top: 50px;
+    left: 130px;
+   
+}
+.circle3 {
+    position: absolute;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    background-color: #177e8b; /* Celeste */
+    top: 680px;
+    left: 90px;
+   
+}
+.circle3-1{
+    position: absolute;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    background-color: #49dbe6; /* Celeste */
+    top: 680px;
+    left: 90px;
+   
+}
+.RubikT{
+    font-size: 40px;
+    font-family: "Nunito","Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: #1edfb5;
+    position:absolute;
+    left:300px;
+}
+.RubikText{
+    text-align: left;
+    color: #20a377;
+    font-family: "Nunito","Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    position: absolute;
+    top: 750px;
+    left: 300px;
+}
+
+        .cursos, .comunidad {
+            padding: 40px;
+            text-align: center;
+        }
+.comunidad{
+    position: absolute;
+            top: 1800px;
+            width: 100%;
+}
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            top: 2500px;
+            width: 100%;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 50%;
+            justify-content: center;
+            overflow: hidden;
+            border: left 500px;
+        }
+
+        .circle img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%;
+           margin-left: 9px;
+        }
+        .Origami{
+            position: absolute;
+            right:200px;
+            top:1000px;
+            height:200px;
+            width:200px;
+        }
+        .OrigamiT{
+            color: #1e6fa5;
+            font-family: "Nunito","Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            font-size: 40px;
+            position:absolute;
+            top:1000px;
+            right:400px;
+
+
+        }
+        .OrigamiText{
+            color: #44a2e0;
+            font-family: "Nunito","Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            font-size: 24px;
+            position:absolute;
+            top:1075px;
+            right:400px;
+
+        }
+        .circle3-3{
+            background-color: #099466;
+            height: 100px;
+            width: 100px;
+            position:absolute;
+            top:1000px;
+            border-radius: 50%;
+            right:200px;
+        }
+        .circle3-2{
+            background-color: #2ae0a3;
+            height: 300px;
+            width: 300px;
+            position:absolute;
+            top:1000px;
+            border-radius: 50%;
+            right:200px;
+        }
+        .Guitarra{
+            position: absolute;
+            left:100px;
+            top:1300px;
+            height:200px;
+            width:200px;
+        }
+        .circle3-4{
+            background-color: #15dada;
+            height: 300px;
+            width: 300px;
+            position:absolute;
+            top:1300px;
+            border-radius: 50%;
+            left:100px; 
+        }
+        .circle3-5{
+            background-color: #0d818a;
+            height: 150px;
+            width: 150px;
+            position:absolute;
+            top:1300px;
+            border-radius: 50%;
+            left:100px;
+        }
+        .GuitarraT{
+            color: #24f8c3;
+            font-family: "Nunito","Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            font-size: 40px;
+            position:absolute;
+            top:1300px;
+            left:300px;
+        }
+        .GuitarraText{
+            color: #149e75;
+            font-family: "Nunito","Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            font-size: 24px;
+            position:absolute;
+            top:1375px;
+            left:300px;
+        }
+        .instagram{
+            height: 200px;
+            width: 350px;
+            position: absolute;
+            top: 1900px;
+            left:200px;
+
+        }
+        .circle4-1{
+            height:200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: #b821dd;
+            position:absolute;
+            top:1950px;
+            left:300px;
+            opacity:50%;
+        }
+        .circle4{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: #f779e2;
+            position:absolute;
+            top:1900px;
+            left:200px;
+            opacity:50%;
+        }
+        .circle4-2{
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+            background-color: #fa892c;
+            position:absolute;
+            top:1900px;
+            left:200px;
+            opacity:50%;
+        }
+        .Youtube{
+            height: 350px;
+            width: 350px;
+            position: absolute;
+            top: 1820px;
+            right:200px;
+
+        }
+        .circle4-5{
+            height:200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: #e04e4e;
+            position:absolute;
+            top:1950px;
+            right:300px;
+            opacity:50%;
+        }
+        .circle4-4{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: #e94236;
+            position:absolute;
+            top:1900px;
+            right:200px;
+            opacity:50%;
+        }
+        .circle4-3{
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+            background-color: #f80c0c;
+            position:absolute;
+            top:1900px;
+            right:200px;
+            opacity:50%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#">Inicio</a>
+            <a href="#">Cursos</a>
+            <div class="dropdown">
+                <button class="dropbtn">Videos</button>
+                <div class="dropdown-content">
+                    <a href="#">Video 1</a>
+                    <a href="#">Video 2</a>
+                    <a href="#">Video 3</a>
+                    <a href="#">Video 4</a>
+                </div>
+            </div>
+            <a href="#">Comunidad</a>
+            <a href="#">Blog</a>
+        </nav>
+        
+        <div class="hero">
+            <div class="circle">
+                <img src="C:\Users\Alumno\Documents\logo22.jpg" alt="Mi Logo">
+            </div>
+            <div class="circles-container">
+                <div class="circle2"></div>
+                <div class="circle2"></div>
+                <div class="circle2"></div>
+                <div class="circle2"></div>
+                <div class="circle2"></div>
+                <div class="circle2"></div>
+                <div class="circle2"></div>
+                <div class="circle2"></div>
+                <div class="circle2"></div>
+                <div class="circle2"></div>
+                <div class="circle2"></div>
+                <div class="circle2"></div>
+            </div>
+            <h1>RED CREATIVA</h1>
+            <h2>El arte a un click</h2>
+            <p>Explora una variedad de cursos en línea impartidos por expertos.</p>
+            
+        </div>
+        <div class="dropdown-circle">
+            <button class="dropbtn-circle" onclick="toggleDropdown()"><i><b>Videos</b></i></button>
+            <div class="dropdown-content-circle" id="myDropdown">
+                <a href="Rubikpage.html">Rubik</a>
+                <a href="OrigamiPege.html">Origami</a>
+                <a href="GuitarPage.html">Guitarra</a>
+            </div>
+    </header>
+
+    <div class="cursos">
+        <h2>Cursos Destacados</h2>
+        <div class="circle3-1"></div>
+        <div class="circle3"></div>
+        <img src="C:\Users\Alumno\Documents\rubik.png" alt="Rubik" class="rubik">
+        <h1 class="RubikT">
+            <b>Cubo Rubik</b>
+        </h1>
+        <h2 class="RubikText">
+            Descubre el mundo del cubo Rubik, expande tus horizontes e impresioná <br> a tus amigos con una nueva habilidad!
+        </h2>
+    </div>
+    <div class="cursos2">
+        <div class="circle3-2"></div>
+        <div class="circle3-3"></div>
+        <a><img src="C:\Users\Alumno\Documents\Origami2.png" alt="Origami" class="Origami"></a>
+        <h1 class="OrigamiT">
+            <b>Origami</b>
+        </h1>
+        <h2 class="OrigamiText">
+        Entrena tus manos descubriendo una nueva habilidad como el origami    
+        </h2>
+    </div>
+    <div class="cursos3">
+        <div class="circle3-4"></div>
+        <div class="circle3-5"></div>
+        <a><img src="C:\Users\Alumno\Documents\Guitarra.png" alt="Guitarra" class="Guitarra"></a>
+        <h1 class="GuitarraT">
+            <b>Guitarra</b>
+        </h1>
+        <h2 class="GuitarraText">
+        Adentrate al mundo de la musica y aprende a tocar un nuevo instrumento
+        </h2>
+    </div>
+<div>
+    <section class="comunidad">
+        <h2>Únete a la Comunidad</h2>
+    </section>
+    <div class="circle4-2"></div>
+    <div class="circle4"></div>
+       <div class="circle4-1"></div>
+       <a href="https://www.instagram.com/creativa_red/"><img src="C:\Users\Alumno\Documents\instagram.png" class="instagram"></a>
+       <div class="circle4-5"></div>
+    <div class="circle4-3"></div>
+       <div class="circle4-4"></div>
+       <a href=""><img src="C:\Users\Alumno\Documents\youtube2.webp" class="Youtube"></a>
+       
+</div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Red_Creativa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+<script > 
+function toggleDropdown() {
+    var dropdown = document.getElementById("myDropdown");
+    dropdown.classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn-circle')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content-circle");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+</script>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación de Video</title>
+</head>
+<body>
+    <header class="head">
+        
+        <div class="circle"></div>
+        <h1 class="titulo">
+           <b>Red Creativa</b> 
+        </h1>
+    </header>
+
+    <button class="boton"><b>Comprar</b></button>
+    <img src="C:\Users\Alumno\Documents\carrito.png" class="carrito">
+    <a href="index10.html"><img src="C:\Users\Alumno\Documents\logo222.png" alt="Mi Logo" class="logo"></a>
+    <div class="frame">
+       
+     <iframe src="C:\Users\Alumno\Documents\RubikV.mp4" frameborder="0" allowfullscreen class="video"></iframe> 
+     
+    </div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+
+  
+    
+        <div class="foot"></div>
+        
+    <img src="C:\Users\Alumno\Documents\fondo.png" alt="fondo" class="fondo">
+    <div class="texto">
+        <h1>Armado de Cubo Rubik</h1>
+        <h2>Aprendé a armar <br>un cubo 2x2, 3x3 y 5x5</h2>
+    </div>
+   
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: calc(100vh - 113px);
+}       
+.carrito{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 200px;
+    left: 280px;
+}
+.boton{
+    background-color: rgb(11, 167, 159);
+    border:5px ;
+    border-color: rgb(11, 167, 159);
+    border-radius: 10px;
+            color: white;
+            position:absolute;
+            left:50px;
+            top:200px;
+            height: 50px;
+            width: 200px;
+            font-family: "Nunito","Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            font-size: 24px;
+}
+.texto{
+    position: absolute;
+    font-family: "Nunito","Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    top: 250px;
+    left:50px;
+}
+        .foot{
+            position: absolute;
+            height: 113px;
+            width: 100%;
+            background-image: linear-gradient(to right, #43d8ab,#41e6b4, #4091e9);
+            bottom:0%;
+            opacity: 50%;
+
+        }
+        .fondo{
+            position:absolute;
+            bottom:0%;
+            rotate: 180deg;
+        }
+        .circle{
+            background-color: white;
+            height: 100px;
+            width: 100px;
+            position:relative;
+            border-radius: 50%;
+            left:4px;
+            top:4px;
+        }
+        .circle2{
+            background-color: #4893e2;
+            height: 200px;
+            width: 200px;
+            position:absolute;
+            border-radius: 50%;
+            right:-100px;
+            top:-100px;
+        }
+        .circle1{
+            background-color: #70a9e6;
+            height: 450px;
+            width: 450px;
+            position:absolute;
+            border-radius: 50%;
+            right:-100px;
+            top:-100px; 
+        }
+        .circle3{
+            background-color: #81baf7;
+            height: 700px;
+            width: 100px;
+            position:absolute;
+            border-radius: 25%;
+            right:100px;
+            top:-200px;
+            rotate: 135deg;
+        }
+        .circle4{
+            background-color: #9fccfc;
+            height: 900px;
+            width: 100px;
+            position:absolute;
+            border-radius: 25%;
+            right:200px;
+            top:-300px;
+            rotate: 135deg;
+        }
+        
+        .titulo{
+            color: white;
+            position:absolute;
+            left:120px;
+            top:10px;
+            font-family: "Nunito","Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        }
+        .logo{
+            position: absolute;
+            top:4px;
+            left:5px;
+            width: 100px;
+            height: 100px;
+            border: 5px white;
+            z-index: 1;
+
+        }
+        .head{
+            background-image: linear-gradient(to right, #3de0b0, #4091e9);
+            height: 110px;
+            width: 100%;
+            opacity:50%;
+        }
+        .video{
+            height: 600px;
+            width: 800px;
+            border-radius: 30px;
+            position:absolute;
+            left:0%;
+        }
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.frame {
+    margin: 20px auto;
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 56.25%; 
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.compra {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+.btn-comprar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Color de botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.btn-comprar:hover {
+    background-color: #0056b3; 
+}
+
+    </style>
+</body>
+</html>
